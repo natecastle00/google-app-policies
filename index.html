@@ -16,6 +16,10 @@
     main { max-width: 640px; width: 100%; }
     h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
     p { color: #475569; margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #11528e; }
+    section { background: white; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+    section p { margin-bottom: 0.75rem; }
+    section p:last-child { margin-bottom: 0; }
     .links { display: grid; gap: 1rem; }
     a {
       display: block; padding: 1.25rem 1.5rem; background: white;
@@ -30,11 +34,16 @@
   <main>
     <h1>Personal OAuth Application</h1>
     <p>Legal notices for the personal OAuth client used to access Google APIs.</p>
+    <section aria-label="Purpose of this application">
+      <h2>Purpose of this application</h2>
+      <p>Personal OAuth Application is a personal, non-commercial OAuth 2.0 client owned and operated by Nate Castle. Its purpose is to let the owner sign in with his own Google account and authorize his personal automation tools (scripts and assistants running on his own devices) to access his Google data on his behalf.</p>
+      <p>The application serves a single user (the owner), is not offered to the general public, and only requests the Google API scopes strictly required by those personal automations. The name shown on the Google consent screen ("Personal OAuth Application") is the same name displayed on this homepage.</p>
+    </section>
     <div class="links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
     </div>
-    <small>This is a personal, non-commercial application. Last updated: September 15, 2026.</small>
+    <small>This is a personal, non-commercial application. Last updated: September 16, 2026.</small>
   </main>
 </body>
 </html>
